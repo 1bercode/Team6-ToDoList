@@ -56,7 +56,7 @@ export function Todo() {
                 task.status && "bg-green-400 border-green-100"
               )}
             >
-              <p className="w-full">{task.content}</p>
+              <p className={cn("w-full", task.status && "text-black")}>{task.content}</p>
               <div className="flex gap-2">
                 <Button onClick={() => toggleTask(task.id)} variant="ghost">
                   {task.status ? (
