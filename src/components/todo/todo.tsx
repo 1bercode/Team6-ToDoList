@@ -53,7 +53,7 @@ export function Todo() {
               key={task.id}
               className={cn(
                 "flex w-full border p-4 items-center rounded-lg",
-                task.status && "bg-green-100 border-green-500"
+                task.status && "bg-green-400 border-green-100"
               )}
             >
               <p className="w-full">{task.content}</p>
